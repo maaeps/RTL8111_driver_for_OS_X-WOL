@@ -15,15 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D34D36C41AD2F62B00EEEC08 /* RealtekRTL8111.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealtekRTL8111.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		D34D36C61AD2F71600EEEC08 /* RealtekRTL8111-V2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealtekRTL8111-V2-Prefix.pch"; sourceTree = "<group>"; };
+		D34D36C41AD2F62B00EEEC08 /* RealtekRTL8111-WOL.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RealtekRTL8111-WOL.kext"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34D36C61AD2F71600EEEC08 /* RealtekRTL8111-WOL-V2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealtekRTL8111-WOL-V2-Prefix.pch"; sourceTree = "<group>"; };
 		D34D36C91AD2F7A900EEEC08 /* APPLE_LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = APPLE_LICENSE; sourceTree = "<group>"; };
 		D34D36CA1AD2F7C500EEEC08 /* IONetworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IONetworkController.h; sourceTree = "<group>"; };
 		D34D36CB1AD2F7C500EEEC08 /* IONetworkInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IONetworkInterface.h; sourceTree = "<group>"; };
 		D34D782722FAED470065D59C /* r8168_dash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = r8168_dash.h; sourceTree = "<group>"; };
 		D37A5F5B16CAF7D600644820 /* gpl.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = gpl.txt; sourceTree = "<group>"; };
 		D37BD68316C605F500C255A2 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
-		D37BD68616C605F500C255A2 /* RealtekRTL8111-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealtekRTL8111-Info.plist"; sourceTree = "<group>"; };
+		D37BD68616C605F500C255A2 /* RealtekRTL8111-WOL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealtekRTL8111-WOL-Info.plist"; sourceTree = "<group>"; };
 		D37BD68816C605F500C255A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D37BD69616C6065300C255A2 /* RealtekRTL8111.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealtekRTL8111.h; sourceTree = "<group>"; };
 		D37BD69716C6065300C255A2 /* RealtekRTL8111.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RealtekRTL8111.cpp; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		D37BD68016C605F500C255A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D34D36C41AD2F62B00EEEC08 /* RealtekRTL8111.kext */,
+				D34D36C41AD2F62B00EEEC08 /* RealtekRTL8111-WOL.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,9 +121,9 @@
 		D37BD68516C605F500C255A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D37BD68616C605F500C255A2 /* RealtekRTL8111-Info.plist */,
+				D37BD68616C605F500C255A2 /* RealtekRTL8111-WOL-Info.plist */,
 				D37BD68716C605F500C255A2 /* InfoPlist.strings */,
-				D34D36C61AD2F71600EEEC08 /* RealtekRTL8111-V2-Prefix.pch */,
+				D34D36C61AD2F71600EEEC08 /* RealtekRTL8111-WOL-V2-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,9 +142,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D34D36B41AD2F62B00EEEC08 /* RealtekRTL8111-V2 */ = {
+		D34D36B41AD2F62B00EEEC08 /* RealtekRTL8111-WOL-V2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D34D36C11AD2F62B00EEEC08 /* Build configuration list for PBXNativeTarget "RealtekRTL8111-V2" */;
+			buildConfigurationList = D34D36C11AD2F62B00EEEC08 /* Build configuration list for PBXNativeTarget "RealtekRTL8111-WOL-V2" */;
 			buildPhases = (
 				D34D36B51AD2F62B00EEEC08 /* Sources */,
 				D34D36B81AD2F62B00EEEC08 /* Frameworks */,
@@ -156,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = "RealtekRTL8111-V2";
+			name = "RealtekRTL8111-WOL-V2";
 			productName = RealtekRTL8111;
-			productReference = D34D36C41AD2F62B00EEEC08 /* RealtekRTL8111.kext */;
+			productReference = D34D36C41AD2F62B00EEEC08 /* RealtekRTL8111-WOL.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Laura Müller";
 			};
-			buildConfigurationList = D37BD67716C605F500C255A2 /* Build configuration list for PBXProject "RealtekRTL8111" */;
+			buildConfigurationList = D37BD67716C605F500C255A2 /* Build configuration list for PBXProject "RealtekRTL8111-WOL" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D34D36B41AD2F62B00EEEC08 /* RealtekRTL8111-V2 */,
+				D34D36B41AD2F62B00EEEC08 /* RealtekRTL8111-WOL-V2 */,
 			);
 		};
 /* End PBXProject section */
@@ -243,17 +243,17 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = $MODULE_VERSION;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RealtekRTL8111/RealtekRTL8111-V2-Prefix.pch";
+				GCC_PREFIX_HEADER = "RealtekRTL8111/RealtekRTL8111-WOL-V2-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "RealtekRTL8111/RealtekRTL8111-Info.plist";
+				INFOPLIST_FILE = "RealtekRTL8111/RealtekRTL8111-WOL-Info.plist";
 				INSTALL_GROUP = "$(GROUP)";
 				INSTALL_OWNER = "$(USER)";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = $MODULE_VERSION;
-				MODULE_NAME = com.insanelymac.RealtekRTL8111;
+				MODULE_NAME = "de.maaeps.RealtekRTL8111-WOL";
 				MODULE_VERSION = 2.3.0d10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.insanelymac.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = RealtekRTL8111;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.maaeps.RealtekRTL8111-WOL";
+				PRODUCT_NAME = "RealtekRTL8111-WOL";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -270,18 +270,18 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RealtekRTL8111/RealtekRTL8111-V2-Prefix.pch";
+				GCC_PREFIX_HEADER = "RealtekRTL8111/RealtekRTL8111-WOL-V2-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "RealtekRTL8111/RealtekRTL8111-Info.plist";
+				INFOPLIST_FILE = "RealtekRTL8111/RealtekRTL8111-WOL-Info.plist";
 				INSTALL_GROUP = "$(GROUP)";
 				INSTALL_OWNER = "$(USER)";
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = $MODULE_VERSION;
-				MODULE_NAME = com.insanelymac.RealtekRTL8111;
+				MODULE_NAME = "de.maaeps.RealtekRTL8111-WOL";
 				MODULE_VERSION = 2.3.0d10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.insanelymac.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = RealtekRTL8111;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.maaeps.RealtekRTL8111-WOL";
+				PRODUCT_NAME = "RealtekRTL8111-WOL";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -378,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D34D36C11AD2F62B00EEEC08 /* Build configuration list for PBXNativeTarget "RealtekRTL8111-V2" */ = {
+		D34D36C11AD2F62B00EEEC08 /* Build configuration list for PBXNativeTarget "RealtekRTL8111-WOL-V2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D34D36C21AD2F62B00EEEC08 /* Debug */,
@@ -387,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D37BD67716C605F500C255A2 /* Build configuration list for PBXProject "RealtekRTL8111" */ = {
+		D37BD67716C605F500C255A2 /* Build configuration list for PBXProject "RealtekRTL8111-WOL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D37BD68E16C605F500C255A2 /* Debug */,

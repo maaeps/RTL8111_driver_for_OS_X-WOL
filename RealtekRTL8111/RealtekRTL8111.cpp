@@ -39,6 +39,9 @@ bool RTL8111::init(OSDictionary *properties)
     
     result = super::init(properties);
     
+    bool tmp = 0;
+    bool wol = ! PE_parse_boot_argn("-mausi_no_wol", &tmp, 0);
+    
     if (result) {
         workLoop = NULL;
         commandGate = NULL;
@@ -84,8 +87,8 @@ bool RTL8111::init(OSDictionary *properties)
         linuxData.pci_dev = &pciDeviceData;
         intrMitigateValue = 0x5f51;
         lastIntrTime = 0;
-        wolCapable = false;
-        wolActive = false;
+        wolCapable = wol;
+        wolActive = wol;
         enableTSO4 = false;
         enableTSO6 = false;
         enableCSO6 = false;
@@ -874,10 +877,13 @@ IOReturn RTL8111::setWakeOnMagicPacket(bool active)
     DebugLog("setWakeOnMagicPacket() ===>\n");
 
     if (wolCapable) {
-        linuxData.wol_enabled = active ? WOL_ENABLED : WOL_DISABLED;
-        wolActive = active;
+        bool tmp = 0;
+        bool wol = ! PE_parse_boot_argn("-mausi_no_wol", &tmp, 0);
         
-        DebugLog("[RealtekRTL8111]: WakeOnMagicPacket %s.\n", active ? "enabled" : "disabled");
+        linuxData.wol_enabled = wol ? WOL_ENABLED : WOL_DISABLED;
+        wolActive = wol;
+        
+        DebugLog("[RealtekRTL8111]: WakeOnMagicPacket %s.\n", wol ? "enabled" : "disabled");
 
         result = kIOReturnSuccess;
     }
